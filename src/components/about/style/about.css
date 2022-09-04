@@ -1,0 +1,238 @@
+.about .about-page {
+  background-image: url("../../../images/bbblurry.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.about .about-page .text {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .about .about-page .text {
+    align-items: flex-start;
+    padding-top: 100px;
+  }
+}
+.about .about-page .text .row {
+  flex-direction: column;
+}
+.about .about-page .text .upper,
+.about .about-page .text .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.about .about-page .text .upper .box-1,
+.about .about-page .text .upper .box-2,
+.about .about-page .text .upper .box-3,
+.about .about-page .text .upper .box-4,
+.about .about-page .text .bottom .box-1,
+.about .about-page .text .bottom .box-2,
+.about .about-page .text .bottom .box-3,
+.about .about-page .text .bottom .box-4 {
+  width: 10px;
+  height: 10px;
+  background-color: var(--dark);
+  margin-bottom: 2rem;
+}
+.about .about-page .text .middle h1 {
+  text-align: center;
+  font-size: 6rem;
+}
+@media screen and (max-width: 768px) {
+  .about .about-page .text .middle h1 {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.about .about-page .text .middle h1 span {
+  font-family: "Chelsea Market", cursive;
+}
+.about .about-page .rise {
+  padding: 2rem 0;
+}
+.about .about-page .rise .row {
+  flex-direction: column;
+  gap: 2rem;
+}
+.about .about-page .rise .row .content {
+  overflow: hidden;
+}
+.about .about-page .rise .row .content .box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.about .about-page .rise .row .content .box img {
+  margin-right: 2rem;
+}
+.about .about-page .rise .row .image .container {
+  padding: 4rem;
+  border-radius: 20px;
+  background: linear-gradient(5.53deg, rgba(255, 61, 0, 0.8) -13.27%, hsla(0deg, 0%, 96%, 0.8) 53.69%), linear-gradient(357.83deg, rgba(255, 61, 0, 0.6) 35.45%, rgba(255, 61, 0, 0.6) 79.92%), #feff4d;
+  position: relative;
+}
+.about .about-page .rise .row .image .container img:first-of-type {
+  width: 10%;
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+.about .about-page .rise .row .image .container img:nth-of-type(2) {
+  width: 10%;
+  position: absolute;
+  top: 10%;
+  right: 15%;
+}
+.about .about-page .rise .row .image .container img:last-of-type {
+  position: relative;
+  top: 80px;
+  left: 20%;
+}
+@media screen and (max-width: 768px) {
+  .about .about-page .rise .row .image .container img:last-of-type {
+    width: 100%;
+    left: 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about .about-page .rise .row .image .container img:last-of-type {
+    width: 65%;
+  }
+}
+.about .about-page .future .left {
+  overflow: hidden;
+}
+.about .about-page .future .left h1 {
+  font-size: 6rem;
+}
+@media screen and (max-width: 768px) {
+  .about .about-page .future .left h1 {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.about .about-page .future .left h1 span {
+  font-family: "Chelsea Market", cursive;
+}
+.about .about-page .power {
+  padding: 3rem 0;
+  overflow: hidden;
+}
+.about .about-page .power .left img {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 3rem;
+  border-radius: 10%;
+}
+@media screen and (max-width: 768px) {
+  .about .about-page .power .left img {
+    padding: 0;
+  }
+}
+.about .about-page .power .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.about .about-page .power .right p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .about .about-page .power .right p {
+    font-size: 1rem;
+  }
+}
+.about .about-page article {
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  height: auto;
+  background-color: var(--dark);
+  color: var(--light);
+  background-image: url("../../../images/bbblurry.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.about .about-page article .wyre {
+  width: 100%;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-page article .wyre .row {
+  flex-direction: column;
+  gap: 5rem;
+}
+.about .about-page article .wyre .row .middle h1 {
+  text-align: center;
+  font-family: "Chelsea Market", cursive;
+  font-size: 10rem;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .about .about-page article .wyre .row .middle h1 {
+    font-size: 5rem;
+  }
+}
+.about .about-page article .wyre .row .middle p {
+  display: flex;
+  justify-content: end;
+}
+.about .about-page article .leadership {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 3rem 0;
+}
+.about .about-page article .leadership .row {
+  flex-direction: column;
+}
+.about .about-page article .leadership .row .members {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .about .about-page article .leadership .row .members {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.about .about-page article .leadership .row .members .ceo,
+.about .about-page article .leadership .row .members .chief,
+.about .about-page article .leadership .row .members .general,
+.about .about-page article .leadership .row .members .head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+.about .about-page article .leadership .row .members .ceo h5,
+.about .about-page article .leadership .row .members .ceo h6,
+.about .about-page article .leadership .row .members .chief h5,
+.about .about-page article .leadership .row .members .chief h6,
+.about .about-page article .leadership .row .members .general h5,
+.about .about-page article .leadership .row .members .general h6,
+.about .about-page article .leadership .row .members .head h5,
+.about .about-page article .leadership .row .members .head h6 {
+  text-align: center;
+}
+.about .about-page article .leadership .row .members .chief img {
+  width: 50%;
+}/*# sourceMappingURL=about.css.map */

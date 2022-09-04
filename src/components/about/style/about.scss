@@ -1,0 +1,236 @@
+.about {
+    .about-page {
+        background-image: url('../../../images/bbblurry.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        // start text
+        .text {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            @media screen and (max-width: 768px) {
+                align-items: flex-start;
+                padding-top: 100px;
+            }
+            .row {
+                flex-direction: column;
+            }
+            .upper,
+            .bottom {
+                display: flex;
+                justify-content: space-between;
+                .box-1,
+                .box-2,
+                .box-3,
+                .box-4 {
+                    width: 10px;
+                    height: 10px;
+                    background-color: var(--dark);
+                    margin-bottom: 2rem;
+                }
+            }
+            .middle {
+                h1 {
+                    text-align: center;
+                    font-size: 6rem;
+                    @media screen and (max-width: 768px) {
+                        font-size: 2rem;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    span {
+                        font-family: 'Chelsea Market', cursive;
+                    }
+                }
+            }
+        }
+        // end text
+        // start rise
+        .rise {
+            padding: 2rem 0;
+            .row {
+                flex-direction: column;
+                gap: 2rem;
+                .content {
+                    overflow: hidden;
+                    .box {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        img {
+                            margin-right: 2rem;
+                        }
+                    }
+                }
+                .image {
+                    .container {
+                        padding: 4rem;
+                        border-radius: 20px;
+                        background: linear-gradient(5.53deg,rgba(255,61,0,.8) -13.27%,hsla(0,0%,96%,.8) 53.69%),linear-gradient(357.83deg,rgba(255,61,0,.6) 35.45%,rgba(255,61,0,.6) 79.92%),#feff4d;
+                        position: relative;
+                        img {
+                            &:first-of-type {
+                                width: 10%;
+                                position: absolute;
+                                top: 0;
+                                left: 10%;
+                            }
+                            &:nth-of-type(2) {
+                                width: 10%;
+                                position: absolute;
+                                top: 10%;
+                                right: 15%;
+                            }
+                            &:last-of-type {
+                                position: relative;
+                                top: 80px;
+                                left: 20%;
+                                @media screen and (max-width: 768px) {
+                                    width: 100%;
+                                    left: 0;
+                                }
+                                @media (min-width: 769px) and (max-width: 1024px) {
+                                    width: 65%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // end rise
+        // start future
+        .future {
+            .left {
+                overflow: hidden;
+                h1 {
+                    font-size: 6rem;
+                    @media screen and (max-width: 768px) {
+                        font-size: 2rem;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    span {
+                        font-family: 'Chelsea Market', cursive;
+                    }
+                }
+            }
+        }
+        // end future
+        // start power
+        .power {
+            padding: 3rem 0;
+            overflow: hidden;
+            .left {
+                img {
+                    background-color: rgba(0,0,0,.8);
+                    padding: 3rem;
+                    border-radius: 10%;
+                    @media screen and (max-width: 768px) {
+                        padding: 0;
+                    }
+                }
+            }
+            .right {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                p {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    @media screen and (max-width: 768px) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        // end power
+        article {
+            border-top-left-radius: 20%;
+            border-top-right-radius: 20%;
+            height: auto;
+            background-color: var(--dark);
+            color: var(--light);
+            background-image: url('../../../images/bbblurry.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            // start wyre
+            .wyre {
+                width: 100%;
+                height: 100vh;
+                position: sticky;
+                top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .row {
+                    flex-direction: column;
+                    gap: 5rem;
+                    .middle {
+                        h1 {
+                            text-align: center;
+                            font-family: "Chelsea Market", cursive;
+                            font-size: 10rem;
+                            margin-bottom: 3rem;
+                            @media screen and (max-width: 768px) {
+                                font-size: 5rem;
+                            }
+                        }
+                        p {
+                            display: flex;
+                            justify-content: end;
+                        }
+                    }
+                }
+            }
+            // end wyre
+            // start leadership
+            .leadership {
+                position: sticky;
+                top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--light);
+                color: var(--dark);
+                padding: 3rem 0;
+                .row {
+                    flex-direction: column;
+                    .members {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        @media screen and (max-width: 768px) {
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        }
+                        .ceo,
+                        .chief,
+                        .general,
+                        .head {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            max-width: 100%;
+                            h5,
+                            h6 {
+                                text-align: center;
+                            }
+                        }
+                        .chief {
+                            img {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+            // end leadership
+        }
+    }
+}

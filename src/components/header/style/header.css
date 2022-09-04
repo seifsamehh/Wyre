@@ -1,0 +1,201 @@
+header {
+  width: 100%;
+  padding: 20px;
+}
+header .row {
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  header .row {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .logo span {
+    display: flex;
+    justify-content: center;
+  }
+}
+header .logo span svg:first-of-type {
+  width: 0;
+}
+header .logo span svg:last-of-type {
+  width: 50%;
+}
+header .links {
+  display: flex;
+  justify-content: center;
+  background-color: var(--dark);
+  padding: 10px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  header .links {
+    margin: 1rem 0;
+  }
+}
+header .links nav {
+  display: flex;
+  gap: 1rem;
+}
+header .links nav .link {
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: relative;
+  white-space: nowrap;
+  color: var(--light);
+}
+header .links nav .link::before,
+header .links nav .link::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+header .links nav .link::before {
+  content: "";
+  /* show by default */
+}
+header .links nav .link--leda {
+  overflow: hidden;
+  line-height: 2;
+  font-weight: 700;
+}
+header .links nav .link--leda::before {
+  height: 2px;
+  top: calc(100% - 5px);
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.3, 1);
+}
+header .links nav .link--leda:hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+}
+header .links nav .link--leda::after {
+  content: attr(data-text);
+  height: 100%;
+  top: 0;
+  background: none;
+  transform-origin: 100% 50%;
+  transform: translate3d(150%, 0, 0);
+  transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.3, 1);
+}
+header .links nav .link--leda:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+header .links nav .link--leda span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.3, 1);
+}
+header .links nav .link--leda:hover span {
+  transform: translate3d(-150%, 0, 0);
+}
+header .button {
+  display: flex;
+  justify-content: end;
+}
+@media screen and (max-width: 768px) {
+  header .button {
+    justify-content: center;
+  }
+}
+header .button .fancy {
+  background-color: transparent;
+  border: 2px solid var(--dark);
+  border-radius: 0;
+  box-sizing: border-box;
+  color: var(--light);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 13px;
+}
+header .button .fancy::before {
+  content: " ";
+  width: 1.5625rem;
+  height: 2px;
+  background: var(--dark);
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+header .button .fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--dark);
+}
+header .button .fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: var(--light);
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+header .button .fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: var(--light);
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+header .button .fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: var(--light);
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+header .button .fancy:hover {
+  color: var(--light);
+  background: var(--dark);
+}
+header .button .fancy:hover::before {
+  width: 0.9375rem;
+  background: var(--light);
+}
+header .button .fancy:hover .text {
+  color: var(--light);
+  padding-left: 1.5em;
+}
+header .button .fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+}
+header .button .fancy:hover .bottom-key-1,
+header .button .fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+}/*# sourceMappingURL=header.css.map */

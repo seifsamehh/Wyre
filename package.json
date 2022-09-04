@@ -1,0 +1,32 @@
+{
+  "name": "wyre",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "framer-motion": "^7.2.1",
+    "react": "^18.2.0",
+    "react-animated-cursor": "^2.5.1",
+    "react-bootstrap": "^2.5.0",
+    "react-detect-offline": "^2.4.5",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
+    "react-scroll-horizontal": "^1.6.6",
+    "react-scroll-parallax": "^3.3.1",
+    "react-scrollchor": "^7.0.2",
+    "swiper": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "vite": "^3.0.0"
+  }
+}

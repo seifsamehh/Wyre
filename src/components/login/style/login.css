@@ -1,0 +1,171 @@
+.login .login-page {
+  display: flex;
+  gap: 10rem;
+}
+@media screen and (max-width: 1024px) {
+  .login .login-page {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.login .login-page .left {
+  background-color: #e6eefe;
+}
+@media screen and (max-width: 768px) {
+  .login .login-page .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .login .login-page .left img {
+    width: 50%;
+  }
+}
+.login .login-page .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+.login .login-page .right .group {
+  position: relative;
+}
+.login .login-page .right .input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+}
+.login .login-page .right .input:focus {
+  outline: none;
+}
+.login .login-page .right label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.login .login-page .right .input:focus ~ label, .login .login-page .right .input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264AE;
+}
+.login .login-page .right .bar {
+  position: relative;
+  display: block;
+  width: 200px;
+}
+.login .login-page .right .bar:before, .login .login-page .right .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.login .login-page .right .bar:before {
+  left: 50%;
+}
+.login .login-page .right .bar:after {
+  right: 50%;
+}
+.login .login-page .right .input:focus ~ .bar:before, .login .login-page .right .input:focus ~ .bar:after {
+  width: 50%;
+}
+.login .login-page .right .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+.login .login-page .right .input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+          animation: inputHighlighter 0.3s ease;
+}
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+.login .login-page .right button {
+  font-size: 20px;
+  background: var(--dark);
+  color: var(--light);
+  padding: 0.7em 1em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.login .login-page .right button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+.login .login-page .right button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+.login .login-page .right button:hover .svg-wrapper {
+  -webkit-animation: fly-1 0.6s ease-in-out infinite alternate;
+          animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+.login .login-page .right button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+.login .login-page .right button:hover span {
+  transform: translateX(5em);
+}
+.login .login-page .right button:active {
+  transform: scale(0.95);
+}
+@-webkit-keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}/*# sourceMappingURL=login.css.map */

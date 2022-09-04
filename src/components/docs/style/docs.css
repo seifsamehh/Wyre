@@ -1,0 +1,33 @@
+.docs .docs-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .docs .docs-page {
+    height: 120vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .docs .docs-page .row {
+    flex-direction: column;
+  }
+}
+.docs .docs-page .left h1 {
+  border-top: 2px solid #5d6cf4;
+  margin: 2rem 0;
+}
+.docs .docs-page .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  background: linear-gradient(5.53deg, rgba(255, 61, 0, 0.8) -13.27%, hsla(0deg, 0%, 96%, 0.8) 53.69%), linear-gradient(357.83deg, rgba(255, 61, 0, 0.6) 35.45%, rgba(255, 61, 0, 0.6) 79.92%), #feff4d;
+}
+@media screen and (max-width: 768px) {
+  .docs .docs-page .right .box img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=docs.css.map */

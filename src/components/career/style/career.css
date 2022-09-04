@@ -1,0 +1,231 @@
+.career .career-page .text {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .career .career-page .text {
+    align-items: flex-start;
+    padding-top: 100px;
+  }
+}
+.career .career-page .text .row {
+  flex-direction: column;
+}
+.career .career-page .text .upper,
+.career .career-page .text .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.career .career-page .text .upper .box-1,
+.career .career-page .text .upper .box-2,
+.career .career-page .text .upper .box-3,
+.career .career-page .text .upper .box-4,
+.career .career-page .text .bottom .box-1,
+.career .career-page .text .bottom .box-2,
+.career .career-page .text .bottom .box-3,
+.career .career-page .text .bottom .box-4 {
+  width: 10px;
+  height: 10px;
+  background-color: var(--dark);
+  margin-bottom: 2rem;
+}
+.career .career-page .text .middle h1 {
+  text-align: center;
+  font-size: 6rem;
+}
+@media screen and (max-width: 768px) {
+  .career .career-page .text .middle h1 {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.career .career-page .text .middle h1 span {
+  font-family: "Chelsea Market", cursive;
+}
+.career .career-page .positions {
+  display: flex;
+  gap: 3rem;
+  padding: 3rem 0;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .career .career-page .positions {
+    flex-direction: column;
+  }
+}
+.career .career-page .positions .left-part video {
+  width: 100%;
+  border-radius: 20px;
+}
+.career .career-page .positions .right-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.career .career-page .positions .right-part .content .cssbuttons-io-button {
+  background: var(--dark);
+  color: var(--light);
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em var(--dark);
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+}
+.career .career-page .positions .right-part .content .cssbuttons-io-button .icon {
+  background: var(--light);
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em var(--dark);
+  right: 0.3em;
+  transition: all 0.3s;
+}
+.career .career-page .positions .right-part .content .cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+.career .career-page .positions .right-part .content .cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: var(--dark);
+}
+.career .career-page .positions .right-part .content .cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+.career .career-page .positions .right-part .content .cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+.career .career-page .positions .right-part img {
+  width: 100%;
+  border-radius: 20px;
+  background: linear-gradient(5.53deg, rgba(255, 61, 0, 0.8) -13.27%, hsla(0deg, 0%, 96%, 0.8) 53.69%), linear-gradient(357.83deg, rgba(255, 61, 0, 0.6) 35.45%, rgba(255, 61, 0, 0.6) 79.92%), #feff4d;
+}
+.career .career-page .text-anime {
+  padding: 3rem 0;
+  overflow: hidden;
+}
+.career .career-page .text-anime div {
+  font-size: 6rem;
+  text-align: center;
+  color: var(--dark);
+  font-weight: 700;
+  text-shadow: 5px 5px 0px #2251D1, 10px 10px 0px #1E48BA, 15px 15px 0px #1B3FA3, 20px 20px 0px #17368C, 25px 25px 0px #132D74, 30px 30px 0px #091944;
+}
+.career .career-page .horizontal {
+  height: 60vh;
+  background: linear-gradient(5.53deg, rgba(0, 26, 255, 0.8) -13.27%, hsla(0deg, 0%, 96%, 0.8) 53.69%), linear-gradient(357.83deg, hsla(60deg, 54%, 97%, 0.6) 35.45%, rgba(61, 81, 255, 0.6) 79.92%), #5d6cf4;
+  padding: 3rem 0;
+}
+@media screen and (max-width: 768px) {
+  .career .career-page .horizontal {
+    display: none;
+  }
+}
+.career .career-page .horizontal div {
+  width: 140vw;
+}
+.career .career-page .horizontal .zero,
+.career .career-page .horizontal .one,
+.career .career-page .horizontal .two,
+.career .career-page .horizontal .three,
+.career .career-page .horizontal .four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-right: 3px solid var(--light);
+  border-left: 3px solid var(--light);
+}
+.career .career-page .horizontal .zero h1,
+.career .career-page .horizontal .zero p,
+.career .career-page .horizontal .one h1,
+.career .career-page .horizontal .one p,
+.career .career-page .horizontal .two h1,
+.career .career-page .horizontal .two p,
+.career .career-page .horizontal .three h1,
+.career .career-page .horizontal .three p,
+.career .career-page .horizontal .four h1,
+.career .career-page .horizontal .four p {
+  text-align: center;
+}
+.career .career-page .horizontal .zero h1,
+.career .career-page .horizontal .one h1,
+.career .career-page .horizontal .two h1,
+.career .career-page .horizontal .three h1,
+.career .career-page .horizontal .four h1 {
+  font-family: "Chelsea Market", cursive;
+}
+.career .career-page .horizontal .zero video,
+.career .career-page .horizontal .one video,
+.career .career-page .horizontal .two video,
+.career .career-page .horizontal .three video,
+.career .career-page .horizontal .four video {
+  width: 23%;
+}
+.career .career-page .greek {
+  height: 100vh;
+  background-image: url("../../../images/dark-greek.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  background-color: #171717;
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.career .career-page .greek .row {
+  flex-direction: column;
+  gap: 10rem;
+}
+.career .career-page .greek .upper .boxs,
+.career .career-page .greek .middle .boxs,
+.career .career-page .greek .footer .boxs {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .career .career-page .greek .upper .boxs,
+.career .career-page .greek .middle .boxs,
+.career .career-page .greek .footer .boxs {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.career .career-page .accordation {
+  background-image: url("../../../images/bbblurry.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3rem 0;
+  background-color: #171717;
+  color: var(--light);
+}
+@media screen and (max-width: 768px) {
+  .career .career-page .accordation .row {
+    flex-direction: column;
+  }
+}
+.career .career-page .accordation .left h1 {
+  font-size: 5rem;
+}/*# sourceMappingURL=career.css.map */

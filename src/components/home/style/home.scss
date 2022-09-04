@@ -1,0 +1,554 @@
+.home {
+    // start home page
+    .homepage {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 768px) {
+            align-items: flex-start;
+            padding-top: 100px;
+        }
+        .row {
+            flex-direction: column;
+        }
+        .upper,
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            .box-1,
+            .box-2,
+            .box-3,
+            .box-4 {
+                width: 10px;
+                height: 10px;
+                background-color: var(--dark);
+                margin-bottom: 2rem;
+            }
+        }
+        .middle {
+            h1 {
+                text-align: center;
+                font-size: 6rem;
+                @media screen and (max-width: 768px) {
+                    font-size: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                }
+                span {
+                    font-family: 'Chelsea Market', cursive;
+                }
+            }
+        }
+    }
+    // end home page
+    // start video
+    .video {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -45px;
+            right: 0;
+            width: 400px;
+            height: 100px;
+            background-color: var(--light);
+            border-top-left-radius: 150px;
+        }
+        video {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .video-box {
+            position: absolute;
+            top: 30%;
+            left: 5%;
+            background-color: rgba(255,255,255,0.6);
+            width: 50%;
+            padding: 4rem 2rem;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 5px, rgba(0, 0, 0, 0.3) 0px 10px, rgba(0, 0, 0, 0.2) 0px 15px, rgba(0, 0, 0, 0.1) 0px 20px, rgba(0, 0, 0, 0.05) 0px 25px;
+            @media screen and (max-width: 1024px) {
+                width: 90%;
+            }
+        }
+    }
+    // end video
+    // start logos
+    .logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        .container {
+            .col {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    transition: 0.5s;
+                    &:hover {
+                        transform: scale(1.4);
+                    }
+                }
+            }
+        }
+    }
+    // end logos
+    // start tools
+    .tools {
+        padding-bottom: 100px;
+        overflow-x: hidden;
+        .row {
+            @media screen and (max-width: 768px) {
+                flex-direction: column-reverse;
+            }
+        }
+        .right-part {
+            h1 {
+                font-size: 6rem;
+                font-weight: 700;
+                @media screen and (max-width: 1024px) {
+                    font-size: 3rem;
+                }
+                span {
+                    font-family: 'Chelsea Market', cursive;
+                }
+            }
+        }
+    }
+    // end tools
+    article {
+        height: auto;
+        .category-one,
+        .category-two,
+        .category-three,
+        .category-four,
+        .category-five {
+            width: 100%;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            background-color: var(--light);
+            .content {
+                padding-top: 2rem;
+            }
+            .video-part {
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+                video {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    // start category one
+    .category-one {
+        .video-part {
+            video {
+                background: linear-gradient(5.53deg,rgba(0,26,255,.8) -13.27%,hsla(0,0%,96%,.8) 53.69%),linear-gradient(357.83deg,hsla(60,54%,97%,.6) 35.45%,rgba(61,81,255,.6) 79.92%),#5d6cf4;
+            }
+        }
+    }
+    // end category one
+    // start category two
+    .category-two {
+        .video-part {
+            video {
+                background: linear-gradient(5.53deg,rgba(254,255,77,.8) -13.27%,hsla(0,0%,96%,.8) 53.69%),linear-gradient(357.83deg,rgba(254,255,77,.6) 35.45%,rgba(254,255,77,.6) 79.92%),#feff4d;
+            }
+        }
+    }
+    // end category two
+    // start category three
+    .category-three {
+        .video-part {
+            video {
+                background: linear-gradient(5.53deg,rgba(255,61,0,.8) -13.27%,hsla(0,0%,96%,.8) 53.69%),linear-gradient(357.83deg,rgba(255,61,0,.6) 35.45%,rgba(255,61,0,.6) 79.92%),#feff4d;
+            }
+        }
+    }
+    // end category three
+    // start category four
+    .category-four {
+        .video-part {
+            video {
+                background: linear-gradient(5.53deg,rgba(154,255,75,.8) -13.27%,hsla(0,0%,96%,.8) 53.69%),linear-gradient(357.83deg,rgba(154,255,75,.6) 35.45%,rgba(154,255,75,.6) 79.92%),#feff4d;
+            }
+        }
+    }
+    // end category four
+    // start category five
+    .category-five {
+        .video-part {
+            video {
+                background: linear-gradient(5.53deg,rgba(0,26,255,.8) -13.27%,hsla(0,0%,96%,.8) 53.69%),linear-gradient(357.83deg,hsla(60,54%,97%,.6) 35.45%,rgba(61,81,255,.6) 79.92%),#5d6cf4;
+            }
+        }
+    }
+    // end category five
+    .part-2 {
+        height: auto;
+    }
+    // start cards
+    .cards {
+        position: sticky;
+        top: 0;
+        @media screen and (max-width: 768px) {
+            position: static;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+        .card{
+            position: relative;
+            width: 300px;
+            height: 350px;
+            background: var(--light);
+            margin: 0 auto;
+            border-radius: 4px;
+          }
+          .card:before,
+          .card:after
+          {
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            background: rgb(121,134,250);
+            transition: 0.5s;
+            z-index:-1;
+          }
+          .card:hover:before{
+          transform: rotate(20deg);
+          box-shadow: 0 2px 20px rgba(121,134,250,.2);
+          }
+          .card:hover:after{
+          transform: rotate(10deg);
+          box-shadow: 0 2px 20px rgba(121,134,250,.2);
+          }
+          .card .imgBx{
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          bottom: 10px;
+          right: 10px;
+          transition: 0.5s;
+          z-index: 1;
+          }
+          .card:hover .imgBx
+          {
+            bottom: 80px;
+          }
+          .card .imgBx img{
+              width: 100%;
+              height: 100%;
+          }
+          .card .details{
+              position: absolute;
+              left: 10px;
+              right: 10px;
+              bottom: 10px;
+              height: 60px;
+              text-align: center;
+          }
+          .card .details h4{
+           margin: 0;
+           padding: 0;
+           font-weight: 600;
+           font-size: 1rem;
+           color: var(--dark);
+           text-transform: uppercase;
+          }
+    }
+    // end cards
+    // start page two
+    .page-two {
+        &::selection {
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        overflow-y: hidden;
+        height: 100vh;
+        background-color: var(--dark);
+        color: var(--light);
+        position: sticky;
+        top: 0;
+        border-top-right-radius: 20%;
+        border-top-left-radius: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 768px) {
+            align-items: flex-start;
+            padding-top: 100px;
+        }
+        .row {
+            flex-direction: column;
+        }
+        .upper,
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            .box-1,
+            .box-2,
+            .box-3,
+            .box-4 {
+                width: 10px;
+                height: 10px;
+                background-color: var(--light);
+                margin-bottom: 2rem;
+            }
+        }
+        .middle {
+            h1 {
+                text-align: center;
+                font-size: 6rem;
+                @media screen and (max-width: 768px) {
+                    font-size: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                }
+                span {
+                    font-family: 'Chelsea Market', cursive;
+                }
+            }
+        }
+    }
+    // end page two
+    // start options
+    .options {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 20%;
+        border-top-left-radius: 20%;
+        background-image: url('../../../images/bbblurry.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: var(--dark);
+        color: var(--light);
+        padding: 2rem 0;
+        @media screen and (max-width: 768px) {
+            height: 120vh;
+        }
+        .row {
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+        }
+        .left-part {
+            h1 {
+                letter-spacing: 2px;
+                font-size: 3rem;
+                @media screen and (max-width: 768px) {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .middle-part {
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    // end options
+    // start imagine
+    .imagine {
+        overflow-x: hidden;
+        border-top-right-radius: 20%;
+        border-top-left-radius: 20%;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../../../images/bbblurry.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: var(--dark);
+        color: var(--light);
+        .row {
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+        }
+        .right {
+            h1 {
+                font-size: 6rem;
+                @media screen and (max-width: 768px) {
+                    font-size: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                }
+                span {
+                    font-family: 'Chelsea Market', cursive;
+                }
+            }
+        }
+    }
+    // end imagine
+    // start wallet
+    .wallet {
+        border-top-right-radius: 20%;
+        border-top-left-radius: 20%;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../../../images/bbblurry.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: var(--dark);
+        color: var(--light);
+        h1 {
+            text-align: center;
+        }
+        .swiper {
+            width: 60%;
+            height: 70vh;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+          }
+          .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 100%;
+            }
+          }
+    }
+    // end wallet
+    // start build
+    .build {
+        overflow: hidden;
+        border-top-right-radius: 20%;
+        border-top-left-radius: 20%;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../../../images/bbblurry.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: var(--dark);
+        color: var(--light);
+        .row {
+            align-items: center;
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+            .left {
+                .cta {
+                    position: relative;
+                    margin: auto;
+                    padding: 12px 18px;
+                    transition: all 0.2s ease;
+                    border: none;
+                    background: none;
+                }
+                .cta:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    border-radius: 50px;
+                    background: var(--light);
+                    width: 45px;
+                    height: 45px;
+                    transition: all 0.3s ease;
+                }
+                .cta span {
+                    position: relative;
+                    font-family: "Ubuntu", sans-serif;
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 0.05em;
+                    color: #234567;
+                }
+                .cta svg {
+                    position: relative;
+                    top: 0;
+                    margin-left: 10px;
+                    fill: none;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke: #234567;
+                    stroke-width: 2;
+                    transform: translateX(-5px);
+                    transition: all 0.3s ease;
+                }
+                .cta:hover:before {
+                    width: 100%;
+                    background: var(--light);
+                }
+                .cta:hover svg {
+                    transform: translateX(0);
+                }
+                .cta:active {
+                    transform: scale(0.95);
+                }
+            }
+            .right {
+                video {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    // end build
+    // start footer
+    footer {
+        border-top-right-radius: 20%;
+        border-top-left-radius: 20%;
+        height: 50vh;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--light);
+        h1 {
+            font-size: 10rem;
+            font-family: 'Chelsea Market', cursive;
+            @media screen and (max-width: 768px) {
+                font-size: 5rem;
+            }
+        }
+        a {
+            color: var(--dark);
+            font-size: 2rem;
+        }
+    }
+    // end footer
+}
